@@ -18,4 +18,9 @@ setTimeout(function () {
   var element = document.getElementById('odometer5');
   element.innerHTML = '6';
   element.classList.add('moveLeft');
-}, 1820);
+}, 1830);
+
+setTimeout(function () {
+  var element = document.querySelector('.screen_start');
+  element.classList.add('shrinkAnimation');
+}, 5000);

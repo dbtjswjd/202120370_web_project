@@ -11,6 +11,8 @@ body {
 }
 
 .screen_start {
+  position: relative;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,16 +20,33 @@ body {
   font-family: Aldrich, sans-serif;
   font-size: 6.25rem;
   color: oklch(79.74% 0.224 148.96deg);
+
+  &.shrinkAnimation {
+    animation: shrinkAnimation 0.5s forwards;
+    animation-fill-mode: forwards;
+  }
 }
 
 .moveLeft {
   left: -1.875rem;
 }
 
-// .odmeter--1 {
-//   left: -1.875rem;
-// }
-
 .screen_start_gap {
   column-gap: 1.5rem;
+}
+
+@keyframes shrinkAnimation {
+  from {
+    top: 0;
+    transform: scale(1);
+  }
+
+  to {
+    top: 22rem;
+    transform: scale(0.4);
+  }
+}
+
+.shrinkAnimation {
+  animation: shrinkAnimation 5.5s forwards;
 }
