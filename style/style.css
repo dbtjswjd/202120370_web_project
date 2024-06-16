@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css';
 @import 'https://fonts.googleapis.com/css2?family=Aldrich&display=swap';
 * {
@@ -9,24 +10,38 @@ body {
   background-color: black;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
 .screen_start {
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   font-family: Aldrich, sans-serif;
-  font-size: 6.25rem;
+  font-size: 5vw;
   color: oklch(79.74% 0.224 148.96deg);
+  transform: translate(-50%, -50%);
 }
 .screen_start.shrinkAnimation {
   animation: shrinkAnimation 0.5s forwards;
   animation-fill-mode: forwards;
 }
-
-.moveLeft {
-  left: -1.875rem;
+.screen_start--1 {
+  padding-inline: 1rem;
+}
+.screen_start--2 {
+  padding-right: 2rem;
+}
+.screen_start--4 {
+  padding-right: 2rem;
+  padding-left: 1rem;
 }
 
 .screen_start_gap {
@@ -36,14 +51,47 @@ body {
 
 @keyframes shrinkAnimation {
   from {
-    top: 0;
-    transform: scale(1);
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
   to {
-    top: 22rem;
-    transform: scale(0.4);
+    top: 70%;
+    transform: translate(-50%, -50%) scale(0.4);
   }
 }
 .shrinkAnimation {
   animation: shrinkAnimation 5.5s forwards;
+}
+
+.start_title,
+.start_subtitle {
+  position: absolute;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-left: 2rem;
+  font-family: Aldrich, sans-serif;
+  color: oklch(79.74% 0.224 148.96deg);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease; /* 투명도 변화를 부드럽게 만듦 */
+  transform: translate(-50%, -50%);
+}
+
+.start_title {
+  top: 40%;
+  font-size: 10vw;
+  letter-spacing: 40px;
+}
+
+.start_subtitle {
+  top: 52%;
+  font-size: 3.1vw;
+  letter-spacing: 2rem;
+}
+
+.fade-in {
+  opacity: 1;
 }

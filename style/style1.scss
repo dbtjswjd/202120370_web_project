@@ -1,7 +1,28 @@
+// @import 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css'; //프리텐다드 폰트
+// @import 'https://fonts.googleapis.com/css2?family=Aldrich&display=swap'; //Aldrich 폰트-첫로딩창
+
+// * {
+//   box-sizing: border-box;
+// }
+
+// body {
+//   margin: 0;
+// }
+
+// h1,
+// h2,
+// h3,
+// h4 {
+//   margin: 0;
+// }
+
 #mainContent {
-  display: flex;
-  align-items: center;
+  display: block;
   justify-content: center;
-  min-height: 100vh;
+  color: white;
   text-align: center;
-  padding: 2rem;
+
+  // background-color: aqua;
+
+  // 여기에 추가적인 스타일을 필요에 따라 작성할 수 있습니다
+}
