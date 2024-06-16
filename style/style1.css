@@ -1,6 +1,21 @@
+@charset "UTF-8";
+p {
+  margin: 0;
+}
+
 #mainContent {
   display: block;
   justify-content: center;
+  margin: 0;
   color: white;
   text-align: center;
+}
+
+.mainContent_fade_in {
+  opacity: 0; /* 초기에 투명하게 설정 */
+  transition: opacity 1s ease;
+}
+
+.visible {
+  opacity: 1; /* 보이게 될 때 opacity를 1로 변경 */
 }

@@ -1,5 +1,5 @@
-@import 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css'; //프리텐다드 폰트
-@import 'https://fonts.googleapis.com/css2?family=Aldrich&display=swap'; //Aldrich 폰트-첫로딩창
+@import 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css';
+@import 'https://fonts.googleapis.com/css2?family=Aldrich&display=swap';
 
 * {
   box-sizing: border-box;
@@ -48,10 +48,6 @@ h4 {
   }
 }
 
-// .moveLeft {
-//   left: -1.875rem;
-// }
-
 .screen_start_gap {
   column-gap: 1.5rem;
 }
@@ -68,10 +64,6 @@ h4 {
   }
 }
 
-.shrinkAnimation {
-  animation: shrinkAnimation 5.5s forwards;
-}
-
 .start_title,
 .start_subtitle {
   position: absolute;
@@ -85,7 +77,7 @@ h4 {
   color: oklch(79.74% 0.224 148.96deg);
   text-align: center;
   opacity: 0;
-  transition: opacity 1s ease; /* 투명도 변화를 부드럽게 만듦 */
+  transition: opacity 1s ease;
   transform: translate(-50%, -50%);
 }
 
@@ -107,6 +99,9 @@ h4 {
 }
 
 .fade-out {
+  pointer-events: none;
+  visibility: hidden;
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity 1s ease, pointer-events 0s ease 0.5s,
+    visibility 0s ease 0.5s;
 }
