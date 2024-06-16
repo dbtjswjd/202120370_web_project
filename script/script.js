@@ -1,14 +1,18 @@
 setTimeout(function () {
   document.getElementById('odometer0').innerHTML = '2';
-}, 1000);
-
-setTimeout(function () {
-  document.getElementById('odometer1').innerHTML = '4';
 }, 1500);
 
 setTimeout(function () {
-  document.getElementById('odometer3').innerHTML = '8';
-}, 2000);
+  var element = document.getElementById('odometer1');
+  element.innerHTML = '4';
+  element.classList.add('moveLeft2');
+}, 1700);
+
+setTimeout(function () {
+  var element = document.getElementById('odometer3');
+  element.innerHTML = '8';
+  element.classList.add('moveLeft2');
+}, 1900);
 
 setTimeout(function () {
   document.getElementById('odometer4').innerHTML = '1';
@@ -17,8 +21,9 @@ setTimeout(function () {
 setTimeout(function () {
   var element = document.getElementById('odometer5');
   element.innerHTML = '6';
-  // element.classList.add('moveLeft');
-}, 1830);
+  element.classList.add('moveLeft1');
+  // 클래스 추가를 0.5초 지연
+}, 1930);
 
 setTimeout(function () {
   var element = document.querySelector('.screen_start');
