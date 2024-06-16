@@ -1,20 +1,27 @@
-// @import 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css'; //프리텐다드 폰트
-// @import 'https://fonts.googleapis.com/css2?family=Aldrich&display=swap'; //Aldrich 폰트-첫로딩창
+@import 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css'; //프리텐다드 폰트
+@import 'https://fonts.googleapis.com/css2?family=Aldrich&display=swap'; //Aldrich 폰트-첫로딩창
 
-// * {
-//   box-sizing: border-box;
-// }
+@import 'https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap'; //픽셀폰트
+//Pixelify San 필셀 느낌 폰트(특정 포인트 사용) - 카드 사용예정 구상중
 
-// body {
-//   margin: 0;
-// }
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap'; //Roboto 로보토(기본 폰트로 거의 다 사용 예정)
 
-// h1,
-// h2,
-// h3,
-// h4 {
-//   margin: 0;
-// }
+@import 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'; // Roboto Condensed 로보토 자간 좁힌거 설정(특정에만 사용 예정)
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
 
 p {
   margin: 0;
@@ -26,10 +33,6 @@ p {
   margin: 0;
   color: white;
   text-align: center;
-
-  // background-color: aqua;
-
-  // 여기에 추가적인 스타일을 필요에 따라 작성할 수 있습니다
 }
 
 .mainContent_fade_in {
@@ -40,10 +43,3 @@ p {
 .visible {
   opacity: 1; /* 보이게 될 때 opacity를 1로 변경 */
 }
-
-// .mainContent_fade_in {
-//   display: block; /* 요소를 보이도록 설정 */
-//   opacity: 0; /* 초기에 투명하게 설정 */
-//   transition: opacity 1s ease;
-//   transition-delay: 0.5s; /* 0.5초 후에 애니메이션 시작 */
-// }
