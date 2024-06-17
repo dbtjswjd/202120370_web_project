@@ -44,3 +44,17 @@ p {
 .visible {
   opacity: 1; /* 보이게 될 때 opacity를 1로 변경 */
 }
+
+.navigation {
+  font-family: Aldrich, sans-serif;
+  background-color: oklch(26.86% 0 0deg);
+}
+.navigation__logo_text {
+  font-size: 2rem;
+}
+.navigation__logo {
+  max-width: 6%;
+}
+.navigation__categories {
+  font-size: 1.1875rem;
+}
