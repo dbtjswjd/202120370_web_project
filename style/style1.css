@@ -73,13 +73,13 @@ p {
 }
 .navigation__categories_left {
   display: flex;
-  -moz-column-gap: 3.5rem;
-       column-gap: 3.5rem;
+  -moz-column-gap: 3.75rem;
+       column-gap: 3.75rem;
 }
 .navigation__categories_right {
   display: flex;
-  -moz-column-gap: 3.5rem;
-       column-gap: 3.5rem;
+  -moz-column-gap: 3.75rem;
+       column-gap: 3.75rem;
 }
 .navigation__categories_left {
   flex-grow: 1;
