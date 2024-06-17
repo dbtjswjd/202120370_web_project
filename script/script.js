@@ -56,7 +56,7 @@ setTimeout(function () {
       mainContent.classList.add('visible');
     }, 50); // 50밀리초 후에 visible 클래스 추가
   }, 1000); // 1초 후에 요소를 보이게 하고 fade-in 애니메이션 시작
-}, 6800);
+}, 6000);
 
 // $(window).on('load', function () {
 //   // 로딩 화면을 페이드 아웃 후 메인 콘텐츠를 페이드 인

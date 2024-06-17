@@ -1,4 +1,5 @@
-@import 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css'; //프리텐다드 폰트
+@import 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css'; //프리텐다드 폰트 "Pretendard Variable", Pretendard로 쓰면됨- 한국어 사용시
+
 @import 'https://fonts.googleapis.com/css2?family=Aldrich&display=swap'; //Aldrich 폰트-첫로딩창
 
 @import 'https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap'; //픽셀폰트
@@ -29,6 +30,7 @@ h4 {
 
 p {
   margin: 0;
+  font-family: 'Pretendard Variable', Pretendard, sans-serif;
 }
 
 #mainContent {
