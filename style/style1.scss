@@ -52,19 +52,36 @@ p {
 
 .navigation {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-family: Aldrich, sans-serif;
   background-color: oklch(26.86% 0 0deg);
 
   &__logo_text {
-    font-size: 2rem;
+    padding-left: 16px;
+    margin-top: 0, 80px;
+    font-size: 24px;
   }
 
   &__logo {
-    max-width: 6%;
+    max-width: 4.5%;
+    padding-block: 8px;
   }
 
   &__categories {
-    font-size: 1.1875rem;
+    display: flex;
+    flex-grow: 1; // 카테고리 부분이 더 많은 공간을 차지하도록 설정
+    justify-content: center;
+    font-size: 1rem;
+
+    &_left {
+      display: flex;
+      column-gap: 40px;
+    }
+
+    &_right {
+      display: flex;
+      column-gap: 40px;
+    }
   }
 }
