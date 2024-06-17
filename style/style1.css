@@ -31,7 +31,7 @@ p {
 #mainContent {
   display: block;
   justify-content: center;
-  margin: 0;
+  margin: auto;
   color: white;
   text-align: center;
 }
@@ -91,4 +91,17 @@ p {
 }
 .navigation__3line {
   margin-left: 1rem;
+}
+
+.cover {
+  display: flex;
+  padding-top: 3rem;
+}
+
+.cover__img1,
+.cover__img2,
+.cover__img3,
+.cover__img4 {
+  max-width: 50%;
+  margin: auto;
 }
