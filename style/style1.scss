@@ -51,6 +51,8 @@ p {
 }
 
 .navigation {
+  display: flex;
+  justify-content: space-between;
   font-family: Aldrich, sans-serif;
   background-color: oklch(26.86% 0 0deg);
 
