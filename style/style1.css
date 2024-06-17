@@ -47,33 +47,48 @@ p {
 
 .navigation {
   display: flex;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
   align-items: center;
   justify-content: space-between;
+  padding-inline: 1.5rem 1rem;
   font-family: Aldrich, sans-serif;
   background-color: oklch(26.86% 0 0deg);
 }
 .navigation__logo_text {
-  padding-left: 16px;
-  margin-top: 0, 80px;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .navigation__logo {
-  max-width: 4.5%;
-  padding-block: 8px;
+  max-width: 4%;
+  padding-block: 0.3rem;
+  margin-inline: 1rem;
 }
 .navigation__categories {
   display: flex;
   flex-grow: 1;
-  justify-content: center;
-  font-size: 1rem;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+  align-items: center;
+  font-size: 1.1875rem;
 }
 .navigation__categories_left {
   display: flex;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
 }
 .navigation__categories_right {
   display: flex;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
+}
+.navigation__categories_left {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+.navigation__categories_right {
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+.navigation__3line {
+  margin-left: 1rem;
 }

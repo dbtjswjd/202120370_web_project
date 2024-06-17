@@ -52,36 +52,58 @@ p {
 
 .navigation {
   display: flex;
+  column-gap: 0.625rem;
   align-items: center;
   justify-content: space-between;
+  padding-inline: 1.5rem 1rem;
   font-family: Aldrich, sans-serif;
   background-color: oklch(26.86% 0 0deg);
 
   &__logo_text {
-    padding-left: 16px;
-    margin-top: 0, 80px;
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   &__logo {
-    max-width: 4.5%;
-    padding-block: 8px;
+    max-width: 4%;
+    padding-block: 0.3rem;
+    margin-inline: 1rem;
   }
 
   &__categories {
     display: flex;
-    flex-grow: 1; // 카테고리 부분이 더 많은 공간을 차지하도록 설정
-    justify-content: center;
-    font-size: 1rem;
+    flex-grow: 1;
+    column-gap: 2.5rem;
+    align-items: center;
+
+    // column-gap: 10px;
+    font-size: 1.1875rem;
 
     &_left {
       display: flex;
-      column-gap: 40px;
+      column-gap: 3.5rem;
+
+      // margin-right: -20rem;
     }
 
     &_right {
       display: flex;
-      column-gap: 40px;
+      column-gap: 3.5rem;
+
+      // margin-left: -10rem;
     }
+  }
+
+  &__categories_left {
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  &__categories_right {
+    flex-grow: 1;
+    justify-content: flex-start;
+  }
+
+  &__3line {
+    margin-left: 1rem;
   }
 }
