@@ -154,6 +154,9 @@ p {
 }
 
 .text1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 5.8rem;
 
   &__big_text {
@@ -172,8 +175,39 @@ p {
 }
 
 .line {
+  width: 80vw;
   margin-block: 3rem;
   margin-inline: 10rem;
   color: var(--line_color);
   border: solid 0.0313rem var(--main_color);
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+// .text1_typing {
+
+//   display: grid;
+//   overflow: hidden;
+//   white-space: nowrap;
+//   animation: typing 4s steps(40, end);
+// }
+
+.text1_typing {
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0; // 초기에는 텍스트를 숨김
+  transition: opacity 0.5s ease; // 텍스트가 나타나는 애니메이션 효과
+  animation: typing 4s steps(40, end) forwards; // 애니메이션 종료 후 상태를 유지
+
+  &.show {
+    opacity: 1; // show 클래스가 추가되면 텍스트가 나타남
+  }
 }

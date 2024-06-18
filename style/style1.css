@@ -138,6 +138,9 @@ p {
 }
 
 .text1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 5.8rem;
 }
 .text1__big_text {
@@ -154,8 +157,28 @@ p {
 }
 
 .line {
+  width: 80vw;
   margin-block: 3rem;
   margin-inline: 10rem;
   color: var(--line_color);
   border: solid 0.0313rem var(--main_color);
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.text1_typing {
+  overflow: hidden;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  animation: typing 4s steps(40, end) forwards;
+}
+.text1_typing.show {
+  opacity: 1;
 }

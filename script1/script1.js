@@ -37,3 +37,22 @@ function adjustImageSize() {
     }
   });
 }
+//메인 이미지 자동 변경 애니메이션
+
+window.addEventListener('scroll', handleScroll);
+
+function handleScroll() {
+  let text1Typing = document.querySelector('.text1_typing');
+  let bounding = text1Typing.getBoundingClientRect();
+  let viewportHeight = window.innerHeight;
+
+  // 스크롤 시 중간쯤 위치할 때 애니메이션 시작 / 1부분일딴 1로해놓고 중간읋 할떄 2로 변경필요
+  if (bounding.top < viewportHeight / 1) {
+    setTimeout(function () {
+      text1Typing.classList.add('show');
+      setTimeout(function () {
+        text1Typing.classList.add('animate-typing');
+      }, 500); // 0.5초(500밀리초) 지연 후 animate-typing 클래스 추가
+    }, 500); // 0.5초(500밀리초) 지연 후 show 클래스 추가
+  }
+}
