@@ -464,6 +464,56 @@ span {
   }
 }
 
+// .movie {
+//   display: flex;
+//   justify-content: center;
+//   margin-block: 28.125rem 10rem;
+//   font-size: 1.875rem;
+//   letter-spacing: 1rem;
+// }
+
+// .movie_position_wrap {
+//   width: 70%;
+//   max-width: 1200px;
+//   margin-inline: auto;
+//   overflow: hidden; // 부모 컨테이너를 벗어나는 것을 방지
+// }
+
+// .movie_position {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+
+//   &_img {
+//     width: 100%;
+//     min-width: 9.375rem;
+//     max-width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+// }
+
+// .movie_position_top,
+// .movie_position_bottom {
+//   display: flex;
+//   flex-wrap: wrap; // 터짐방지 줄바꿈
+//   gap: 2rem;
+// }
+
+// .movie_position_bottom {
+//   justify-content: center;
+//   width: 100%;
+//   padding-top: 2rem;
+// }
+
+// .movie_position_top img,
+// .movie_position_bottom img {
+//   width: calc(25% - 2rem); // 4개의 열로 나눔, 간격 고려
+//   min-width: 150px; // 최소 너비 설정
+//   max-width: 100%;
+//   height: auto;
+// }
 .movie {
   display: flex;
   justify-content: center;
@@ -472,22 +522,62 @@ span {
   letter-spacing: 1rem;
 }
 
-.movie_position {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.movie_position_wrap {
+  width: 70%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
 
-  &_img {
+.movie_position_img {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  img {
+    display: block; // 이미지의 inline 요소 기본값 제거
     width: 100%;
-    min-width: 9.375rem;
-    max-width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: cover; // 이미지 비율 유지하면서 요소에 맞추기
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    background: rgb(0 0 0 / 50%);
+    border-radius: 0.5rem;
+
+    .movie1 {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
   }
 }
 
 .movie_position_top,
 .movie_position_bottom {
   display: flex;
+  gap: 2rem;
+}
+
+.movie_position_bottom {
+  justify-content: center;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.movie_position_top .movie_position_img,
+.movie_position_bottom .movie_position_img {
+  width: calc(25% - 2rem); // 4개의 열로 나눔, 간격 고려
+  min-width: 150px; // 최소 너비 설정
+  height: auto;
 }
