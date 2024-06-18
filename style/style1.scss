@@ -56,6 +56,15 @@ p {
   opacity: 1; /* 보이게 될 때 opacity를 1로 변경 */
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 1000;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
 .navigation {
   display: flex;
   column-gap: 0.625rem;
@@ -70,7 +79,7 @@ p {
   }
 
   &__logo {
-    max-width: 4%;
+    max-width: 3%;
     padding-block: 0.3rem;
     margin-inline: 1rem;
   }
@@ -82,7 +91,7 @@ p {
     align-items: center;
 
     // column-gap: 10px;
-    font-size: 1.1875rem;
+    font-size: 0.9688rem;
 
     &_left {
       display: flex;
@@ -198,7 +207,7 @@ p {
   white-space: nowrap;
   opacity: 0; // 초기에는 텍스트를 숨김
   transition: opacity 0.5s ease; // 텍스트가 나타나는 애니메이션 효과
-  animation: typing 5.6s steps(40, end) forwards; // 애니메이션 종료 후 상태를 유지
+  animation: typing 7.6s steps(40, end) forwards; // 애니메이션 종료 후 상태를 유지
 
   &.show {
     opacity: 1; // show 클래스가 추가되면 텍스트가 나타남
@@ -206,8 +215,9 @@ p {
 }
 
 .gallery {
-  margin-block: 26.8125rem 5.3125rem;
+  margin-block: 26.8125rem 6.875rem;
   font-size: 1.875rem;
+  letter-spacing: 1rem;
 }
 
 .gallery_img {
@@ -294,4 +304,51 @@ p {
   /*   scroll-snap이 달라붙는 item 기준 start, end, center */
   scroll-snap-align: start;
   height: 300px;
+}
+
+.overview {
+  margin-block: 26.8125rem 5.3125rem;
+  font-size: 1.875rem;
+  letter-spacing: 1rem;
+}
+
+.overview_position {
+  display: flex;
+  align-items: center;
+  margin-inline: 15rem;
+
+  &__img {
+    width: 50%;
+    margin-right: 2.6875rem;
+  }
+
+  &__title1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--main_color);
+  }
+
+  &__text {
+    font-family: 'Pretendard Variable', Pretendard, sans-serif;
+    font-size: 0.8438rem;
+    font-weight: 200;
+    line-height: 1.875rem;
+    text-align: left;
+  }
+
+  &__text_1 {
+    margin-block: 1rem;
+  }
+
+  &__text_2 {
+    margin-block: 1rem;
+  }
+
+  &__text_3 {
+    margin-block: 1rem;
+  }
+}
+
+span {
+  font-weight: 400;
 }

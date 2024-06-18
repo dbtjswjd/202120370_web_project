@@ -51,6 +51,15 @@ p {
   opacity: 1; /* 보이게 될 때 opacity를 1로 변경 */
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 1000;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
 .navigation {
   display: flex;
   -moz-column-gap: 0.625rem;
@@ -65,7 +74,7 @@ p {
   font-size: 1.5rem;
 }
 .navigation__logo {
-  max-width: 4%;
+  max-width: 3%;
   padding-block: 0.3rem;
   margin-inline: 1rem;
 }
@@ -75,7 +84,7 @@ p {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
   align-items: center;
-  font-size: 1.1875rem;
+  font-size: 0.9688rem;
 }
 .navigation__categories_left {
   display: flex;
@@ -178,15 +187,16 @@ p {
   white-space: nowrap;
   opacity: 0;
   transition: opacity 0.5s ease;
-  animation: typing 5.6s steps(40, end) forwards;
+  animation: typing 7.6s steps(40, end) forwards;
 }
 .text1_typing.show {
   opacity: 1;
 }
 
 .gallery {
-  margin-block: 26.8125rem 5.3125rem;
+  margin-block: 26.8125rem 6.875rem;
   font-size: 1.875rem;
+  letter-spacing: 1rem;
 }
 
 .gallery_img {
@@ -262,4 +272,45 @@ p {
   /*   scroll-snap이 달라붙는 item 기준 start, end, center */
   scroll-snap-align: start;
   height: 300px;
+}
+
+.overview {
+  margin-block: 26.8125rem 5.3125rem;
+  font-size: 1.875rem;
+  letter-spacing: 1rem;
+}
+
+.overview_position {
+  display: flex;
+  align-items: center;
+  margin-inline: 15rem;
+}
+.overview_position__img {
+  width: 50%;
+  margin-right: 2.6875rem;
+}
+.overview_position__title1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--main_color);
+}
+.overview_position__text {
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  font-size: 0.8438rem;
+  font-weight: 200;
+  line-height: 1.875rem;
+  text-align: left;
+}
+.overview_position__text_1 {
+  margin-block: 1rem;
+}
+.overview_position__text_2 {
+  margin-block: 1rem;
+}
+.overview_position__text_3 {
+  margin-block: 1rem;
+}
+
+span {
+  font-weight: 400;
 }

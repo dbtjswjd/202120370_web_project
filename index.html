@@ -53,36 +53,38 @@
       <div class="mainContent_fade_in" id="mainContent" style="display: none">
         <!-- 메인 콘텐츠를 여기에 추가하세요 -->
         <!-- 네비게이션 애니메이션 아직 안넣음 추후 넣어주기 -->
-        <div class="navigation">
-          <div class="navigation__logo_text">ALIEN</div>
-          <div class="navigation__categories">
-            <div class="navigation__categories_left">
-              <div class="navigation__categories_left--1">Gallery</div>
-              <div class="navigation__categories_left--2">Overview</div>
+        <div class="fixed">
+          <div class="navigation">
+            <div class="navigation__logo_text">ALIEN</div>
+            <div class="navigation__categories">
+              <div class="navigation__categories_left">
+                <div class="navigation__categories_left--1">Gallery</div>
+                <div class="navigation__categories_left--2">Overview</div>
+              </div>
+              <img
+                class="navigation__logo"
+                src="./src/assets/alien_logo.png"
+                alt="에일리언 모습의 형상로고 클릭시 맨위 상단으로 돌아가도록 설정되어있다"
+              />
+              <div class="navigation__categories_right">
+                <div class="navigation__categories_right--1">Movie</div>
+                <div class="navigation__categories_right--2">Cards</div>
+                <div class="navigation__categories_right--3">Yuseon</div>
+              </div>
             </div>
-            <img
-              class="navigation__logo"
-              src="./src/assets/alien_logo.png"
-              alt="에일리언 모습의 형상로고 클릭시 맨위 상단으로 돌아가도록 설정되어있다"
-            />
-            <div class="navigation__categories_right">
-              <div class="navigation__categories_right--1">Movie</div>
-              <div class="navigation__categories_right--2">Cards</div>
-              <div class="navigation__categories_right--3">Yuseon</div>
+            <div class="navigation__3line">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="38"
+                height="38"
+                viewBox="0 0 24 24"
+                style="fill: white; transform: ; msfilter: "
+              >
+                <path
+                  d="M4 6h2v2H4zm0 5h2v2H4zm0 5h2v2H4zm16-8V6H8.023v2H18.8zM8 11h12v2H8zm0 5h12v2H8z"
+                ></path>
+              </svg>
             </div>
-          </div>
-          <div class="navigation__3line">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="38"
-              height="38"
-              viewBox="0 0 24 24"
-              style="fill: white; transform: ; msfilter: "
-            >
-              <path
-                d="M4 6h2v2H4zm0 5h2v2H4zm0 5h2v2H4zm16-8V6H8.023v2H18.8zM8 11h12v2H8zm0 5h12v2H8z"
-              ></path>
-            </svg>
           </div>
         </div>
 
@@ -199,7 +201,40 @@
             alt=""
           />
         </div>
-        <h2 class="overview"></h2>
+        <h2 class="overview">OVERVIEW</h2>
+        <div class="overview_position">
+          <img
+            class="overview_position__img"
+            src="./src/assets/gallery_img1.jpg"
+            alt=""
+          />
+          <div class="overview_position__text">
+            <div class="overview_position__title1">ALIEN시리즈의 시작</div>
+
+            <div class="overview_position__text_1">
+              <span>월터 힐</span>이 제작을 맡고 <span>리들리 스콧감독</span>이
+              연출, 20세기 폭스 영국 런던 지사와 브랜디와인 미국 지사, 스콧 프리
+              프로덕션, 그리고 셰퍼턴 스튜디오가 제작한1979년영화
+              <span>
+                셰퍼턴 스튜디오가 제작한1979년영화 에이리언은 외계생물
+                에이리언과 인간의 혈투를 그린 괴물 호러 SF 영화 시리즈 셰퍼턴
+                스튜디오가 제작한1979년영화 </span
+              >이다.
+            </div>
+            <div class="overview_position__text_2">
+              미국 본사와 영국 지사를 둔20세기 스튜디오와 미국 본사를 둔
+              브랜디와인 프로덕션이 모든 영화 시리즈의 제작에 참여했지만, 20세기
+              스튜디오와 브랜디와인 프로덕션 뿐만 아니라 다양한 제작사들이
+              에이리언 시리즈 영화 제작에 참여했다.
+            </div>
+            <div class="overview_position__text_3">
+              에이리언4를 제외한 에이리언 시리즈 영화들의 경우,미국의
+              제작사와영국의 제작사가 제작에 참여했다. 1979년부터 1997년까지 총
+              4편의 정식 시리즈가 제작되었으며, 그 중 첫번째 작품인리들리 스콧의
+              에이리언(1979)은 영화 역사상 최고의 걸작 중하나로 꼽힌다
+            </div>
+          </div>
+        </div>
         <h2 class="movie"></h2>
         <h2 class="cards"></h2>
       </div>
