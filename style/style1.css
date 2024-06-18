@@ -475,7 +475,7 @@ span {
   -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
           clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
   opacity: 1;
-  transform: scale(1.2); /* hover 시 확대 효과 */
+  transform: scale(1.15); /* hover 시 확대 효과 */
 }
 .movie_position_img .overlay:hover .movie_title,
 .movie_position_img .overlay:hover .movie_text {
@@ -540,4 +540,12 @@ span {
 
 .video::-webkit-scrollbar {
   display: none;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-block: 30.5rem 10rem;
+  font-size: 1.875rem;
+  letter-spacing: 1rem;
 }
