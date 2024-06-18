@@ -14,6 +14,7 @@
 :root {
   --main_color: oklch(79.74% 0.224 148.96deg);
   --line_color: oklch(63.64% 0.178 150.5deg);
+  --navigation_color: oklch(21.86% 0 0deg);
 }
 
 * {
@@ -473,14 +474,21 @@ span {
   letter-spacing: 1rem;
 }
 
+.movie_position_img:hover .overlay {
+  opacity: 1;
+}
+
 .movie_position_wrap {
   width: 70%;
   max-width: 1200px;
   margin-inline: auto;
 }
 
-.movie_position_img:hover .overlay {
-  opacity: 1;
+.movie_position_top,
+.movie_position_bottom {
+  display: flex;
+  flex-wrap: wrap; /* 화면이 작아질 때 줄 바꿈 처리 */
+  gap: 2rem;
 }
 
 .movie_position_img {
@@ -568,4 +576,34 @@ span {
   width: calc(25% - 2rem); // 4개의 열로 나눔, 간격 고려
   min-width: 9.375rem; // 최소 너비 설정
   height: auto;
+}
+
+.video {
+  display: flex;
+  gap: 1rem; /* 각 요소 사이의 간격 설정 */
+  justify-content: space-around; /* 요소들 사이의 간격을 동일하게 설정 */
+  padding-block: 2rem;
+  margin-top: 7rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  background-color: var(--navigation_color);
+
+  .movie_video_1,
+  .movie_video_2,
+  .movie_video_3,
+  .movie_video_4,
+  .movie_video_5,
+  .movie_video_6 {
+    /* 클래스 이름이 올바르지 않은 것을 수정함 */
+    width: 100%; /* 부모 요소(.video)에 맞추어 100% 너비 설정 */
+    max-width: calc(
+      33% - 1rem
+    ); /* 부모 요소에서 간격을 제외한 너비의 1/3으로 설정 */
+
+    height: auto; /* 높이 자동으로 설정 */
+  }
+}
+
+.video::-webkit-scrollbar {
+  display: none;
 }
