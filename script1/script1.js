@@ -56,3 +56,10 @@ function handleScroll() {
     }); // 0.5초(500밀리초) 지연 후 show 클래스 추가
   }
 }
+
+//카드 뒤집는 효과
+document.querySelectorAll('.flip-card').forEach(function (card) {
+  card.addEventListener('click', function () {
+    this.querySelector('.flip-card-inner').classList.toggle('is-flipped');
+  });
+});
