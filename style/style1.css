@@ -554,8 +554,10 @@ span {
 .flip-card {
   width: 303px;
   height: 25.4375rem;
+  overflow: auto;
   background-color: black;
-  border: 1px solid var(--main_color);
+  border: 0.05rem solid var(--main_color);
+  border-radius: 3%;
   transition: background-color 0.7s ease;
   perspective: 1000px;
 }
@@ -593,6 +595,7 @@ span {
 .flip-card-front:hover {
   cursor: pointer;
   background-color: var(--cards_background_color);
+  border-radius: 3%;
   transform: scale(1.15);
 }
 .flip-card-back {
@@ -608,12 +611,17 @@ span {
 }
 .flip-card-back:hover {
   cursor: pointer;
+  border-radius: 3%;
+}
+.flip-card-back-title, .flip-card-back-subtitle, .flip-card-back-text1, .flip-card-back-text2 {
+  max-width: 100%; /* 텍스트 너비 제한 */
+  margin: 0 auto; /* 가운데 정렬 */
+  text-align: center;
 }
 .flip-card-back-title {
-  margin-top: 1.0625rem;
+  margin-top: 17px;
   font-family: "Pixelify Sans", Aldrich, sans-serif;
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.5rem;
   line-height: 2.5rem;
   color: var(--main_color);
   letter-spacing: 0.4rem;
@@ -656,7 +664,6 @@ span {
   font-weight: 400;
   color: var(--main_color);
   letter-spacing: 0.19rem;
-  list-style: 2rem;
 }
 
 .is-flipped {
