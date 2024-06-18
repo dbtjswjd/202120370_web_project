@@ -436,6 +436,7 @@ span {
   padding-inline: 3rem;
   margin-top: 12rem;
 
+  //나중에 이미지수정(다른사진으로 대체)
   &__img {
     max-width: 90%;
     margin-inline: auto;
@@ -494,6 +495,10 @@ span {
     object-fit: cover;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   .overlay {
     position: absolute;
     top: 0;
@@ -523,15 +528,18 @@ span {
     transform: scale(0.8); /* hover 시 확대 효과 */
   }
 
+  .overlay:hover .movie_title,
+  .overlay:hover .movie_text {
+    transform: scale(1.2); /* hover 시 텍스트 확대 효과 */
+  }
+
   .overlay .movie_title {
-    margin-bottom: 0.3125rem;
+    margin-bottom: 1rem;
     font-family: 'Pretendard Variable', Pretendard, sans-serif;
     font-size: 1.625rem;
     font-weight: 700;
     line-height: 2.3125rem;
-    transition-delay: calc(
-      0.1s + var(--char-index) * var(--title-stagger)
-    ); /* 예시 코드에서 가져와 적용 */
+    transition: transform 0.3s ease;
   }
 
   .overlay .movie_text {
@@ -539,9 +547,7 @@ span {
     font-family: aldrich, sans-serif;
     font-size: 1.25rem;
     line-height: 1.5rem;
-    transition-delay: calc(
-      0.1s + var(--word-index) * var(--text-stagger)
-    ); /* 예시 코드에서 가져와 적용 */
+    transition: transform 0.3s ease;
   }
 }
 

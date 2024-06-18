@@ -438,6 +438,9 @@ span {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.movie_position_img a {
+  text-decoration: none;
+}
 .movie_position_img .overlay {
   position: absolute;
   top: 0;
@@ -466,20 +469,24 @@ span {
   opacity: 1;
   transform: scale(0.8); /* hover 시 확대 효과 */
 }
+.movie_position_img .overlay:hover .movie_title,
+.movie_position_img .overlay:hover .movie_text {
+  transform: scale(1.2); /* hover 시 텍스트 확대 효과 */
+}
 .movie_position_img .overlay .movie_title {
-  margin-bottom: 0.3125rem;
+  margin-bottom: 1rem;
   font-family: "Pretendard Variable", Pretendard, sans-serif;
   font-size: 1.625rem;
   font-weight: 700;
   line-height: 2.3125rem;
-  transition-delay: calc(0.1s + var(--char-index) * var(--title-stagger)); /* 예시 코드에서 가져와 적용 */
+  transition: transform 0.3s ease;
 }
 .movie_position_img .overlay .movie_text {
   margin-bottom: 0.625rem;
   font-family: aldrich, sans-serif;
   font-size: 1.25rem;
   line-height: 1.5rem;
-  transition-delay: calc(0.1s + var(--word-index) * var(--text-stagger)); /* 예시 코드에서 가져와 적용 */
+  transition: transform 0.3s ease;
 }
 
 .movie_position_top,
