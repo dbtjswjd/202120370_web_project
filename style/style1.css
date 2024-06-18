@@ -93,15 +93,40 @@ p {
   margin-left: 1rem;
 }
 
-.cover {
-  display: flex;
-  padding-top: 3rem;
+.main_cover {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
 }
 
-.cover__img1,
-.cover__img2,
-.cover__img3,
-.cover__img4 {
-  max-width: 50%;
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  padding-top: 6rem;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.cover__img {
+  height: auto;
   margin: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }

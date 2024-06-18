@@ -57,26 +57,3 @@ setTimeout(function () {
     }, 50); // 50밀리초 후에 visible 클래스 추가
   }, 1000); // 1초 후에 요소를 보이게 하고 fade-in 애니메이션 시작
 }, 6000);
-
-// $(window).on('load', function () {
-//   // 로딩 화면을 페이드 아웃 후 메인 콘텐츠를 페이드 인
-//   setTimeout(function () {
-//     $('#loadingScreen').fadeOut(1000, function () {
-//       $('#loadingScreen').css('pointer-events', 'none'); // 이벤트 차단
-//       $('#loadingScreen').remove(); // 페이드 아웃 후 요소를 DOM에서 제거
-
-//       // 메인 콘텐츠를 부드럽게 표시 (페이드 인 애니메이션)
-//       $('#mainContent').fadeIn(1000); // 1초 동안 페이드 인 애니메이션 적용
-//     });
-//   }, 4000); // 4초 후에 실행
-// });
-
-// setTimeout(function () {
-//   $('#loadingScreen').fadeOut(9000, function () {
-//     $('#loadingScreen').css('pointer-events', 'none'); // 이벤트 차단
-//     $('#loadingScreen').remove(); // 페이드 아웃 후 요소를 DOM에서 제거
-
-//     // 메인 콘텐츠를 부드럽게 표시 (페이드 인 애니메이션)
-//     $('#mainContent').fadeIn(1000); // 1초 동안 페이드 인 애니메이션 적용
-//   });
-// }, 6500); // 총 6.5초 후에 실행 (초기 애니메이션 시간 포함)
