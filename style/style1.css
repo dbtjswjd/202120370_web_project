@@ -178,21 +178,21 @@ p {
   white-space: nowrap;
   opacity: 0;
   transition: opacity 0.5s ease;
-  animation: typing 6s steps(40, end) forwards;
+  animation: typing 5.6s steps(40, end) forwards;
 }
 .text1_typing.show {
   opacity: 1;
 }
 
 .gallery {
-  margin-block: 26.8125rem;
+  margin-block: 26.8125rem 5.3125rem;
   font-size: 1.875rem;
 }
 
 .gallery_img {
   position: relative;
   max-width: 100%;
-  margin-inline: 1.5625rem;
+  margin-inline: 5.625rem;
 }
 .gallery_img .gallery_grid {
   display: grid;
@@ -243,4 +243,23 @@ p {
   grid-row: 3/4;
   grid-column: 2/7;
   aspect-ratio: 28/13;
+}
+
+.gallery_img2 {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+}
+
+.gallery_img2::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery_img2 img {
+  /*   scroll-snap이 달라붙는 item 기준 start, end, center */
+  scroll-snap-align: start;
+  height: 300px;
 }

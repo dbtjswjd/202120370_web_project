@@ -47,7 +47,7 @@ function handleScroll() {
   let viewportHeight = window.innerHeight;
 
   // 스크롤 시 중간쯤 위치할 때 애니메이션 시작 / 1부분일딴 1로해놓고 중간읋 할떄 2로 변경필요
-  if (bounding.top < viewportHeight / 1) {
+  if (bounding.top < viewportHeight / 2) {
     setTimeout(function () {
       text1Typing.classList.add('show');
       setTimeout(function () {

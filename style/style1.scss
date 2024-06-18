@@ -198,7 +198,7 @@ p {
   white-space: nowrap;
   opacity: 0; // 초기에는 텍스트를 숨김
   transition: opacity 0.5s ease; // 텍스트가 나타나는 애니메이션 효과
-  animation: typing 6s steps(40, end) forwards; // 애니메이션 종료 후 상태를 유지
+  animation: typing 5.6s steps(40, end) forwards; // 애니메이션 종료 후 상태를 유지
 
   &.show {
     opacity: 1; // show 클래스가 추가되면 텍스트가 나타남
@@ -206,14 +206,14 @@ p {
 }
 
 .gallery {
-  margin-block: 26.8125rem;
+  margin-block: 26.8125rem 5.3125rem;
   font-size: 1.875rem;
 }
 
 .gallery_img {
   position: relative;
   max-width: 100%;
-  margin-inline: 1.5625rem;
+  margin-inline: 5.625rem;
 
   .gallery_grid {
     display: grid;
@@ -275,4 +275,23 @@ p {
       // 그 등찢고나오는 장면 (이미지 위치 잘못해서 그냥 적고 알아보기)
     }
   }
+}
+
+.gallery_img2 {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+}
+
+.gallery_img2::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery_img2 img {
+  /*   scroll-snap이 달라붙는 item 기준 start, end, center */
+  scroll-snap-align: start;
+  height: 300px;
 }
