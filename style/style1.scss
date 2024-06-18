@@ -464,56 +464,6 @@ span {
   }
 }
 
-// .movie {
-//   display: flex;
-//   justify-content: center;
-//   margin-block: 28.125rem 10rem;
-//   font-size: 1.875rem;
-//   letter-spacing: 1rem;
-// }
-
-// .movie_position_wrap {
-//   width: 70%;
-//   max-width: 1200px;
-//   margin-inline: auto;
-//   overflow: hidden; // 부모 컨테이너를 벗어나는 것을 방지
-// }
-
-// .movie_position {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-
-//   &_img {
-//     width: 100%;
-//     min-width: 9.375rem;
-//     max-width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-//   }
-// }
-
-// .movie_position_top,
-// .movie_position_bottom {
-//   display: flex;
-//   flex-wrap: wrap; // 터짐방지 줄바꿈
-//   gap: 2rem;
-// }
-
-// .movie_position_bottom {
-//   justify-content: center;
-//   width: 100%;
-//   padding-top: 2rem;
-// }
-
-// .movie_position_top img,
-// .movie_position_bottom img {
-//   width: calc(25% - 2rem); // 4개의 열로 나눔, 간격 고려
-//   min-width: 150px; // 최소 너비 설정
-//   max-width: 100%;
-//   height: auto;
-// }
 .movie {
   display: flex;
   justify-content: center;
@@ -528,16 +478,20 @@ span {
   margin-inline: auto;
 }
 
+.movie_position_img:hover .overlay {
+  opacity: 1;
+}
+
 .movie_position_img {
   position: relative;
   width: 100%;
   height: auto;
 
   img {
-    display: block; // 이미지의 inline 요소 기본값 제거
+    display: block;
     width: 100%;
     height: auto;
-    object-fit: cover; // 이미지 비율 유지하면서 요소에 맞추기
+    object-fit: cover;
   }
 
   .overlay {
@@ -547,36 +501,48 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     width: 100%;
     height: 100%;
-    padding-inline: 1rem;
-    padding-bottom: 2.2rem;
+    padding: 1rem;
+    clip-path: circle(0% at center);
     color: white;
     text-align: center;
-    background: rgb(0 0 0 / 50%);
-    border-radius: 0.5rem;
+
+    // background: oklch(49.74% 0.224 148.96deg /30%);
+
+    background-color: oklch(0% 0.025 148.96030667805832deg / 66.2%);
+    border-radius: 50%;
+    opacity: 0;
+    transition: clip-path 0.3s ease, opacity 0.3s ease;
   }
-}
 
-.movie_title,
-.movie_text {
-  text-wrap: pretty;
-}
+  &:hover .overlay {
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    opacity: 1;
+    transform: scale(0.8); /* hover 시 확대 효과 */
+  }
 
-.movie_title {
-  margin-bottom: 0.3125rem;
-  font-family: 'Pretendard Variable', Pretendard, sans-serif;
-  font-size: 1.625rem;
-  font-weight: 700;
-  line-height: 2.3125rem;
-}
+  .overlay .movie_title {
+    margin-bottom: 0.3125rem;
+    font-family: 'Pretendard Variable', Pretendard, sans-serif;
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 2.3125rem;
+    transition-delay: calc(
+      0.1s + var(--char-index) * var(--title-stagger)
+    ); /* 예시 코드에서 가져와 적용 */
+  }
 
-.movie_text {
-  margin-bottom: 0.625rem;
-  font-family: aldrich, sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  .overlay .movie_text {
+    margin-bottom: 0.625rem;
+    font-family: aldrich, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    transition-delay: calc(
+      0.1s + var(--word-index) * var(--text-stagger)
+    ); /* 예시 코드에서 가져와 적용 */
+  }
 }
 
 .movie_position_top,
