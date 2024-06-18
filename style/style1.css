@@ -4,6 +4,7 @@
 @import 'https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap';
 @import 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wdth,GRAD@0,8..144,50..150,-50..100;1,8..144,50..150,-50..100&display=swap';
 :root {
   --main_color: oklch(79.74% 0.224 148.96deg);
   --line_color: oklch(63.64% 0.178 150.5deg);
@@ -275,7 +276,7 @@ p {
 }
 
 .overview {
-  margin-block: 26.8125rem 5.3125rem;
+  margin-block: 26.8125rem 10rem;
   font-size: 1.875rem;
   letter-spacing: 1rem;
 }
@@ -283,7 +284,10 @@ p {
 .overview_position {
   display: flex;
   align-items: center;
-  margin-inline: 15rem;
+  width: 80vw; /* 뷰포트 너비의 80% */
+  max-width: 1000px; /* 최대 너비 설정 */
+  padding-inline: 5vw;
+  transform: translateX(5%);
 }
 .overview_position__img {
   width: 50%;
