@@ -31,6 +31,7 @@ h2,
 h3,
 h4 {
   margin: 0;
+  font-family: aldrich, sans-serif;
 }
 
 p {
@@ -192,22 +193,19 @@ p {
   }
 }
 
-// .text1_typing {
-
-//   display: grid;
-//   overflow: hidden;
-//   white-space: nowrap;
-//   animation: typing 4s steps(40, end);
-// }
-
 .text1_typing {
   overflow: hidden;
   white-space: nowrap;
   opacity: 0; // 초기에는 텍스트를 숨김
   transition: opacity 0.5s ease; // 텍스트가 나타나는 애니메이션 효과
-  animation: typing 4s steps(40, end) forwards; // 애니메이션 종료 후 상태를 유지
+  animation: typing 6s steps(40, end) forwards; // 애니메이션 종료 후 상태를 유지
 
   &.show {
     opacity: 1; // show 클래스가 추가되면 텍스트가 나타남
   }
+}
+
+.gallery {
+  margin-block: 26.8125rem;
+  font-size: 1.875rem;
 }

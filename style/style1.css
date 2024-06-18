@@ -26,6 +26,7 @@ h2,
 h3,
 h4 {
   margin: 0;
+  font-family: aldrich, sans-serif;
 }
 
 p {
@@ -177,8 +178,13 @@ p {
   white-space: nowrap;
   opacity: 0;
   transition: opacity 0.5s ease;
-  animation: typing 4s steps(40, end) forwards;
+  animation: typing 6s steps(40, end) forwards;
 }
 .text1_typing.show {
   opacity: 1;
+}
+
+.gallery {
+  margin-block: 26.8125rem;
+  font-size: 1.875rem;
 }

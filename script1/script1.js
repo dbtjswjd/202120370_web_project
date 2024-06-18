@@ -53,6 +53,6 @@ function handleScroll() {
       setTimeout(function () {
         text1Typing.classList.add('animate-typing');
       }, 500); // 0.5초(500밀리초) 지연 후 animate-typing 클래스 추가
-    }, 500); // 0.5초(500밀리초) 지연 후 show 클래스 추가
+    }); // 0.5초(500밀리초) 지연 후 show 클래스 추가
   }
 }
