@@ -619,8 +619,10 @@ span {
 
 .flip-card {
   width: 303px;
+
+  // min-width: 10vw;
   height: 25.4375rem;
-  overflow: auto;
+  overflow: hidden;
   background-color: black;
   border: 0.05rem solid var(--main_color);
   border-radius: 3%;
