@@ -281,13 +281,21 @@ p {
   letter-spacing: 1rem;
 }
 
+.overview {
+  display: flex;
+  justify-content: center;
+  margin-block: 26.8125rem 10rem;
+  font-size: 1.875rem;
+  letter-spacing: 1rem;
+}
+
 .overview_position {
   display: flex;
   align-items: center;
   width: 80vw; /* 뷰포트 너비의 80% */
   max-width: 1000px; /* 최대 너비 설정 */
-  padding-inline: 5vw;
-  transform: translateX(5%);
+  padding-inline: 5vw; /* 뷰포트 너비의 5% */
+  transform: translateX(15%); /* 왼쪽으로 15% 이동 */
 }
 .overview_position__img {
   width: 50%;
@@ -305,16 +313,34 @@ p {
   line-height: 1.875rem;
   text-align: left;
 }
-.overview_position__text_1 {
-  margin-block: 1rem;
-}
-.overview_position__text_2 {
-  margin-block: 1rem;
-}
-.overview_position__text_3 {
+.overview_position__text_1, .overview_position__text_2, .overview_position__text_3 {
   margin-block: 1rem;
 }
 
-span {
-  font-weight: 400;
+.overview_position2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-self: center;
+  width: 80vw;
+  max-width: 1000px;
+  padding-inline: 9vw 3vw;
+  transform: translateX(50%);
+}
+.overview_position2__title2 {
+  margin-right: -8vw; /* 오른쪽 마진 추가 */
+  font-family: "Roboto Serif", serif;
+  font-size: 12.5rem;
+  font-weight: 600;
+  color: oklch(65.34% 0 0deg);
+}
+.overview_position2__text2 {
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  font-size: 0.8438rem;
+  font-weight: 200;
+  line-height: 1.875rem;
+  text-align: right;
+}
+.overview_position2__text2_1, .overview_position2__text2_2, .overview_position2__text2_3 {
+  margin-block: 2rem;
 }
