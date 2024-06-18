@@ -9,6 +9,11 @@
 
 @import 'https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'; // Roboto Condensed 로보토 자간 좁힌거 설정(특정에만 사용 예정)
 
+:root {
+  --main_color: oklch(79.74% 0.224 148.96deg);
+  --line_color: oklch(63.64% 0.178 150.5deg);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -122,7 +127,7 @@ p {
   justify-content: center;
   width: 100%;
   height: auto;
-  padding-top: 6rem;
+  padding-top: 5rem;
   margin: 0;
   overflow: hidden;
 }
@@ -146,4 +151,29 @@ p {
   height: auto;
   margin: auto;
   object-fit: contain;
+}
+
+.text1 {
+  padding-top: 5.8rem;
+
+  &__big_text {
+    margin-bottom: 1.6rem;
+    font-family: aldrich, sans-serif;
+    font-size: 2.1875rem;
+    color: var(--main_color);
+  }
+
+  &__small_text {
+    font-family: 'Pretendard Variable', Pretendard, sans-serif;
+    font-size: 1.1875rem;
+    font-weight: 400;
+    color: var(--main_color);
+  }
+}
+
+.line {
+  margin-block: 3rem;
+  margin-inline: 10rem;
+  color: var(--line_color);
+  border: solid 0.0313rem var(--main_color);
 }
