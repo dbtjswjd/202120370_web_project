@@ -309,12 +309,6 @@ p {
 }
 
 .overview {
-  margin-block: 26.8125rem 10rem;
-  font-size: 1.875rem;
-  letter-spacing: 1rem;
-}
-
-.overview {
   display: flex;
   justify-content: center;
   margin-block: 26.8125rem 10rem;
@@ -357,26 +351,20 @@ p {
 }
 
 .overview_position2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-self: center;
   width: 80vw;
-  max-width: 1000px;
-  padding-inline: 9vw 3vw;
-
-  // margin-left: auto; /* 오른쪽으로 정렬 */
-  transform: translateX(50%);
 
   &__title2 {
-    margin-right: -8vw; /* 오른쪽 마진 추가 */
+    margin-right: -7rem;
     font-family: 'Roboto Serif', serif;
     font-size: 12.5rem;
     font-weight: 600;
     color: oklch(65.34% 0 0deg);
+    text-align: right;
   }
 
   &__text2 {
+    max-width: 65%;
+    margin-left: auto;
     font-family: 'Pretendard Variable', Pretendard, sans-serif;
     font-size: 0.8438rem;
     font-weight: 200;
