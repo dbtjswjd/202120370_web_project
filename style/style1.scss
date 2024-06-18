@@ -57,7 +57,7 @@ p {
   justify-content: space-between;
   padding-inline: 1.5rem 1rem;
   font-family: Aldrich, sans-serif;
-  background-color: oklch(26.86% 0 0deg);
+  background-color: oklch(21.86% 0 0deg);
 
   &__logo_text {
     font-size: 1.5rem;
@@ -113,18 +113,17 @@ p {
   width: 100%;
   max-width: 100%;
   margin: auto;
-
-  // overflow: ;
+  overflow: hidden;
 }
 
 .cover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   height: auto;
   padding-top: 6rem;
-  margin-inline: auto;
+  margin: 0;
   overflow: hidden;
 }
 
