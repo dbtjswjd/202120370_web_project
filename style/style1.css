@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth; /* 부드러운 스크롤 */
+  scroll-snap-type: y mandatory;
 }
 
 * {
