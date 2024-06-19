@@ -55,15 +55,15 @@ a:visited {
 
 // 커서 변경해보기
 
-// .back_ground_texture {
-//   position: absolute;
-//   z-index: -5;
-//   width: 100vw;
-//   height: 1170vh;
-//   color: white;
-//   background-image: url('https://www.transparenttextures.com/patterns/graphy.png');
-//   opacity: 0.28;
-// }
+.back_ground_texture {
+  position: absolute;
+  z-index: -5;
+  width: 100%;
+  height: 1170vh;
+  color: white;
+  background-image: url('https://www.transparenttextures.com/patterns/graphy.png');
+  opacity: 0.28;
+}
 
 /* OPTIONAL / this class marks display as flex on the rest of the element's classlist */
 .flex {
@@ -596,12 +596,12 @@ span {
   &:hover .overlay {
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
     opacity: 1;
-    transform: scale(1.15); /* hover 시 확대 효과 */
+    transform: scale(0.9); /* hover 시 확대 효과 */
   }
 
   .overlay:hover .movie_title,
   .overlay:hover .movie_text {
-    transform: scale(0.7); /* hover 시 텍스트 확대 효과 */
+    transform: scale(0.88); /* hover 시 텍스트 확대 효과 */
   }
 
   .overlay .movie_title {
