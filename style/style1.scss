@@ -431,10 +431,10 @@ span {
 .overview_position {
   display: flex;
   align-items: center;
-  width: 80vw; /* 뷰포트 너비의 80% */
-  max-width: 1000px; /* 최대 너비 설정 */
-  padding-inline: 5vw; /* 뷰포트 너비의 5% */
-  transform: translateX(15%); /* 왼쪽으로 15% 이동 */
+  width: 80vw;
+  max-width: 1000px;
+  padding-inline: 5vw;
+  transform: translateX(15%);
 
   &__img {
     width: 50%;
