@@ -11,6 +11,11 @@
   --navigation_color: oklch(21.86% 0 0deg);
   --cards_background_color: oklch(23.32% 0.035 144.35deg);
   --hover_color: oklch(27.76% 0.074 147.57deg);
+  --hover_categories_color: oklch(79.74% 0.205 163.46deg);
+}
+
+html {
+  scroll-behavior: smooth; /* 부드러운 스크롤 */
 }
 
 * {
@@ -245,9 +250,19 @@ a:visited {
 }
 
 .gallery {
+  padding-block: 3rem;
   margin-block: 26.8125rem 6.875rem;
+  margin-inline: 30rem;
   font-size: 1.875rem;
   letter-spacing: 1rem;
+  background-color: var(--navigation_color);
+  border-radius: 80%;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* 전환 효과 추가 */
+}
+
+.gallery:hover {
+  background-color: var(--hover_categories_color);
+  transform: scale(1.2); /* hover 시 크기 증가 */
 }
 
 .gallery_img {
