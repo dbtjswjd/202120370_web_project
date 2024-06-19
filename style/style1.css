@@ -47,16 +47,6 @@ a:visited {
   color: inherit; /* 방문한 링크의 색상을 상속받도록 설정 */
 }
 
-.back_ground_texture {
-  position: absolute;
-  z-index: -5;
-  width: 100vw;
-  height: 1170vh;
-  color: white;
-  background-image: url("https://www.transparenttextures.com/patterns/graphy.png");
-  opacity: 0.28;
-}
-
 /* OPTIONAL / this class marks display as flex on the rest of the element's classlist */
 .flex {
   display: flex;
@@ -641,6 +631,12 @@ span {
   overflow: scroll;
   transition: background-color 0.7s ease;
   backface-visibility: hidden;
+  scrollbar-width: none; /* Firefox에 대한 스크롤바 숨김 */
+  -ms-overflow-style: none; /* IE 및 Edge에 대한 스크롤바 숨김 */
+}
+.flip-card .flip-card-front::-webkit-scrollbar,
+.flip-card .flip-card-back::-webkit-scrollbar {
+  display: none; /* Chrome, Safari 및 Opera에 대한 스크롤바 숨김 */
 }
 .flip-card-front {
   box-sizing: border-box;
