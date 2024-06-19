@@ -24,6 +24,7 @@
 
 body {
   margin: 0;
+  color: white;
 }
 
 img {
@@ -50,6 +51,23 @@ a {
 
 a:visited {
   color: inherit; /* 방문한 링크의 색상을 상속받도록 설정 */
+}
+
+// 커서 변경해보기
+
+.back_ground_texture {
+  position: absolute;
+  z-index: -5;
+  width: 100vw;
+  height: 1170vh;
+  color: white;
+  background-image: url('https://www.transparenttextures.com/patterns/graphy.png');
+  opacity: 0.28;
+}
+
+/* OPTIONAL / this class marks display as flex on the rest of the element's classlist */
+.flex {
+  display: flex;
 }
 
 #mainContent {
@@ -750,7 +768,7 @@ span {
       margin-top: 17px;
       font-family: 'Pixelify Sans', Aldrich, sans-serif;
       font-size: 1.5rem;
-      line-height: 2.5rem;
+      line-height: 1.875rem;
       color: var(--main_color);
       letter-spacing: 0.4rem;
     }
@@ -776,7 +794,7 @@ span {
     font-family: 'Pixelify Sans', Aldrich, sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
     color: var(--main_color);
     letter-spacing: 0.4rem;
   }
