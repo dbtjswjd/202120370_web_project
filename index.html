@@ -57,19 +57,47 @@
           <div class="navigation">
             <div class="navigation__logo_text">ALIEN</div>
             <div class="navigation__categories">
-              <div class="navigation__categories_left">
-                <div class="navigation__categories_left--1">Gallery</div>
-                <div class="navigation__categories_left--2">Overview</div>
+              <div
+                class="navigation__categories_left navigation__categories_left--1"
+              >
+                <a
+                  href="#gallery_1"
+                  class="navigation__categories_left--1 navigation__categories_left--color"
+                  >Gallery</a
+                >
+                <a
+                  href="#overview_1"
+                  class="navigation__categories_left--2 navigation__categories_left--color"
+                  >Overview</a
+                >
               </div>
-              <img
-                class="navigation__logo"
-                src="./src/assets/alien_logo.png"
-                alt="에일리언 모습의 형상로고 클릭시 맨위 상단으로 돌아가도록 설정되어있다"
-              />
-              <div class="navigation__categories_right">
-                <div class="navigation__categories_right--1">Movie</div>
-                <div class="navigation__categories_right--2">Cards</div>
-                <div class="navigation__categories_right--3">Yuseon</div>
+
+              <a href="#main_cover_1">
+                <img
+                  class="navigation__logo"
+                  src="./src/assets/alien_logo.png"
+                  alt="에일리언 모습의 형상로고 클릭시 맨위 상단으로 돌아가도록 설정되어있다"
+                />
+              </a>
+
+              <div
+                class="navigation__categories_right navigation__categories_right--1"
+              >
+                <a
+                  href="#movie_1"
+                  class="navigation__categories_right--1 navigation__categories_right--color"
+                  >Movie</a
+                >
+                <a
+                  href="#cards_1"
+                  class="navigation__categories_right--2 navigation__categories_right--color"
+                  >Cards</a
+                >
+                <a
+                  href="https://github.com/dbtjswjd/202120370_web_project"
+                  class="navigation__categories_right--3 navigation__categories_right--color"
+                  >Yuseon</a
+                >
               </div>
             </div>
             <div class="navigation__3line">
@@ -88,7 +116,7 @@
           </div>
         </div>
 
-        <div class="main_cover">
+        <div id="main_cover_1" class="main_cover">
           <div class="cover fade">
             <img
               class="cover__img1"
@@ -130,7 +158,7 @@
           <div class="line"></div>
         </div>
 
-        <h2 class="gallery">GALLERY</h2>
+        <h2 id="gallery_1" class="gallery">GALLERY</h2>
         <div class="gallery_img">
           <div class="gallery_grid">
             <img
@@ -202,7 +230,7 @@
           />
         </div>
         <div class="overview_alingn_center">
-          <h2 class="overview">OVERVIEW</h2>
+          <h2 id="overview_1" class="overview">OVERVIEW</h2>
 
           <div class="overview_position">
             <img
@@ -339,7 +367,7 @@
             </div>
           </div>
         </div>
-        <h2 class="movie">MOVIE</h2>
+        <h2 id="movie_1" class="movie">MOVIE</h2>
         <div class="movie_position_wrap">
           <div class="movie_position_top">
             <div class="movie_position_img">
@@ -473,7 +501,7 @@
           ></iframe>
         </div>
 
-        <h2 class="cards">CARDS</h2>
+        <h2 id="cards_1" class="cards">CARDS</h2>
         <div class="cards_flex">
           <div class="flip-card">
             <div class="flip-card-inner">
