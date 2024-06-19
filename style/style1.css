@@ -10,7 +10,7 @@
   --line_color: oklch(63.64% 0.178 150.5deg);
   --navigation_color: oklch(21.86% 0 0deg);
   --cards_background_color: oklch(23.32% 0.035 144.35deg);
-  --hover_color: oklch(27.76% 0.074 147.57deg);
+  --hover_color: oklch(81.86% 0.1755 149.69deg);
   --hover_categories_color: oklch(79.74% 0.205 163.46deg);
 }
 
@@ -334,11 +334,12 @@ a:visited {
 
 .gallery_img2::-webkit-scrollbar {
   width: 1px;
+  padding-block: 0.2rem;
   background-color: black;
 }
 
 .gallery_img2:hover::-webkit-scrollbar-thumb {
-  background-color: var(--main_color);
+  background-color: oklch(63.46% 0.0515 182.51deg);
   border-radius: 10px;
 }
 
