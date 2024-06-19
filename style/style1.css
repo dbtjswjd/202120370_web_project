@@ -625,10 +625,9 @@ span {
 .video .movie_video_4,
 .video .movie_video_5,
 .video .movie_video_6 {
-  /* 클래스 이름이 올바르지 않은 것을 수정함 */
   width: 100%; /* 부모 요소(.video)에 맞추어 100% 너비 설정 */
   max-width: calc(33% - 1rem); /* 부모 요소에서 간격을 제외한 너비의 1/3으로 설정 */
-  height: auto; /* 높이 자동으로 설정 */
+  height: auto;
 }
 
 .video::-webkit-scrollbar {
